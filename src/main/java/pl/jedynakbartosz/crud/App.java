@@ -16,9 +16,9 @@ public class App {
         final AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         final UserService userService = (UserService) context.getBean("userServiceImpl");
         final Users user = new Users();
-        user.setName("mithat");
-        user.setSalary(new BigDecimal("10000"));
-        user.setSsn("abcd");
+        user.setName("bartek");
+        user.setSalary(new BigDecimal("555"));
+        user.setSsn("bdr");
         user.setStarted_date(new LocalDate());
 
         userService.saveUser(user);

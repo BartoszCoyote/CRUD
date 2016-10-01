@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="postgres">
+      <object-id>12373</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="users">
+      <object-id>16393</object-id>
+    </database>
+    <schema id="3" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>623</introspection-state-number>
+      <introspection-timestamp>2016-10-01.13:33:00.624</introspection-timestamp>
+    </schema>
+    <schema id="4" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="5" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="6" parent="1" name="pg_temp_1">
+      <object-id>11816</object-id>
+    </schema>
+    <schema id="7" parent="1" name="pg_toast_temp_1">
+      <object-id>11817</object-id>
+    </schema>
+    <schema id="8" parent="1" name="information_schema">
+      <object-id>12081</object-id>
+    </schema>
+    <sequence id="9" parent="3" name="Users_id_seq">
+      <object-id>24596</object-id>
+      <state-number>623</state-number>
+    </sequence>
+    <table id="10" parent="3" name="users">
+      <object-id>16397</object-id>
+      <state-number>619</state-number>
+    </table>
+    <table id="11" parent="3" name="Users">
+      <object-id>24598</object-id>
+      <state-number>623</state-number>
+    </table>
+    <column id="12" parent="11" name="id">
+      <state-number>623</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;&quot;Users_id_seq&quot;&apos;::regclass)</default-expression>
+    </column>
+    <column id="13" parent="11" name="name">
+      <state-number>623</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="14" parent="11" name="salary">
+      <state-number>623</state-number>
+      <data-type>numeric(19,2)|0</data-type>
+    </column>
+    <column id="15" parent="11" name="ssn">
+      <state-number>623</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="16" parent="11" name="started_date">
+      <state-number>623</state-number>
+      <data-type>date|0</data-type>
+    </column>
+    <index id="17" parent="11" name="Users_pkey">
+      <object-id>24605</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="18" parent="11" name="Users_pkey">
+      <object-id>24606</object-id>
+      <columns>id</columns>
+      <underlying-index>Users_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
